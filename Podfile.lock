@@ -1,0 +1,12 @@
+PODS:
+  - IQKeyboardManagerSwift (6.0.2)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 59d4b0e140bc546c3c76ae5bb35b3dafd10b8172
+
+PODFILE CHECKSUM: 333c079a9c2e9b74119b722d90488595159a3fad
+
+COCOAPODS: 1.4.0
