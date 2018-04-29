@@ -8,7 +8,7 @@ target 'Vk' do
   # Pods for Vk
 
   pod 'IQKeyboardManagerSwift'
-
+  pod 'ObjectMapper', '~> 3.1'
 
   target 'VkTests' do
     inherit! :search_paths

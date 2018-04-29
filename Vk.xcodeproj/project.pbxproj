@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		013E4D6DE5341C978367A2ED /* Pods_VkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACBD69034476ACCA1C8F37 /* Pods_VkTests.framework */; };
+		486ED7B9209617F400B95EF4 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486ED7B2209617F300B95EF4 /* ApiConfig.swift */; };
+		486ED7BA209617F400B95EF4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486ED7B3209617F300B95EF4 /* Request.swift */; };
+		486ED7BB209617F400B95EF4 /* RequestProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486ED7B4209617F300B95EF4 /* RequestProcessing.swift */; };
+		486ED7BC209617F400B95EF4 /* RequestBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486ED7B5209617F300B95EF4 /* RequestBuilding.swift */; };
+		486ED7BD209617F400B95EF4 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486ED7B6209617F400B95EF4 /* Empty.swift */; };
+		486ED7BE209617F400B95EF4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486ED7B7209617F400B95EF4 /* Result.swift */; };
+		486ED7BF209617F400B95EF4 /* RequestSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486ED7B8209617F400B95EF4 /* RequestSending.swift */; };
 		488ECDE32095FB7B00A28E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488ECDE22095FB7B00A28E0E /* AppDelegate.swift */; };
 		488ECDE52095FB7B00A28E0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488ECDE42095FB7B00A28E0E /* ViewController.swift */; };
 		488ECDE82095FB7B00A28E0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488ECDE62095FB7B00A28E0E /* Main.storyboard */; };
@@ -43,6 +50,13 @@
 		2EAA40AA53644F631FF157D6 /* Pods_Vk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADBD6307BDA002F2A73E364 /* Pods_VkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		417788BACE9EA4FF626D886D /* Pods-VkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VkUITests/Pods-VkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		486ED7B2209617F300B95EF4 /* ApiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		486ED7B3209617F300B95EF4 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		486ED7B4209617F300B95EF4 /* RequestProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProcessing.swift; sourceTree = "<group>"; };
+		486ED7B5209617F300B95EF4 /* RequestBuilding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilding.swift; sourceTree = "<group>"; };
+		486ED7B6209617F400B95EF4 /* Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		486ED7B7209617F400B95EF4 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		486ED7B8209617F400B95EF4 /* RequestSending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSending.swift; sourceTree = "<group>"; };
 		488ECDDF2095FB7B00A28E0E /* Vk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488ECDE22095FB7B00A28E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488ECDE42095FB7B00A28E0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +116,70 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		486ED7AB209615AD00B95EF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				488ECDE22095FB7B00A28E0E /* AppDelegate.swift */,
+				488ECDE42095FB7B00A28E0E /* ViewController.swift */,
+				488ECDE62095FB7B00A28E0E /* Main.storyboard */,
+				488ECDE92095FB8100A28E0E /* Assets.xcassets */,
+				488ECDEB2095FB8100A28E0E /* LaunchScreen.storyboard */,
+				488ECDEE2095FB8100A28E0E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		486ED7AC209615C800B95EF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		486ED7AD209615DA00B95EF4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		486ED7AE209615EB00B95EF4 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				486ED7B1209617DB00B95EF4 /* Core */,
+				486ED7B0209617D500B95EF4 /* Models */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		486ED7AF2096179500B95EF4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		486ED7B0209617D500B95EF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		486ED7B1209617DB00B95EF4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				486ED7B2209617F300B95EF4 /* ApiConfig.swift */,
+				486ED7B6209617F400B95EF4 /* Empty.swift */,
+				486ED7B3209617F300B95EF4 /* Request.swift */,
+				486ED7B5209617F300B95EF4 /* RequestBuilding.swift */,
+				486ED7B4209617F300B95EF4 /* RequestProcessing.swift */,
+				486ED7B8209617F400B95EF4 /* RequestSending.swift */,
+				486ED7B7209617F400B95EF4 /* Result.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		488ECDD62095FB7B00A28E0E = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +205,11 @@
 		488ECDE12095FB7B00A28E0E /* Vk */ = {
 			isa = PBXGroup;
 			children = (
-				488ECDE22095FB7B00A28E0E /* AppDelegate.swift */,
-				488ECDE42095FB7B00A28E0E /* ViewController.swift */,
-				488ECDE62095FB7B00A28E0E /* Main.storyboard */,
-				488ECDE92095FB8100A28E0E /* Assets.xcassets */,
-				488ECDEB2095FB8100A28E0E /* LaunchScreen.storyboard */,
-				488ECDEE2095FB8100A28E0E /* Info.plist */,
+				486ED7AB209615AD00B95EF4 /* App */,
+				486ED7AD209615DA00B95EF4 /* Modules */,
+				486ED7AC209615C800B95EF4 /* Views */,
+				486ED7AF2096179500B95EF4 /* Extension */,
+				486ED7AE209615EB00B95EF4 /* Api */,
 			);
 			path = Vk;
 			sourceTree = "<group>";
@@ -393,10 +470,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vk/Pods-Vk-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -456,7 +535,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				488ECDE52095FB7B00A28E0E /* ViewController.swift in Sources */,
+				486ED7BF209617F400B95EF4 /* RequestSending.swift in Sources */,
+				486ED7BA209617F400B95EF4 /* Request.swift in Sources */,
+				486ED7BB209617F400B95EF4 /* RequestProcessing.swift in Sources */,
+				486ED7BC209617F400B95EF4 /* RequestBuilding.swift in Sources */,
 				488ECDE32095FB7B00A28E0E /* AppDelegate.swift in Sources */,
+				486ED7BD209617F400B95EF4 /* Empty.swift in Sources */,
+				486ED7BE209617F400B95EF4 /* Result.swift in Sources */,
+				486ED7B9209617F400B95EF4 /* ApiConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,7 +718,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97GHEGCZ3N;
-				INFOPLIST_FILE = Vk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vk/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fa.Vk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -648,7 +734,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97GHEGCZ3N;
-				INFOPLIST_FILE = Vk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vk/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fa.Vk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
